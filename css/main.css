@@ -1,0 +1,103 @@
+html,body{
+	background-color:#6699CC;
+	font-family: "Microsoft YaHei",sans-serif;
+	text-align:center;
+	font-size:16px;	
+}
+
+h1{
+	font-size:34px;
+	font-weight: bold;	
+	padding-bottom:20px;
+	border-bottom: 2px solid white;
+	text-shadow:2px 2px #6699CC,2px 3px #aee2d9;	
+}
+
+.panel-title a{
+	font-size:20px;
+	font-weight: bold;
+	text-decoration: none;
+	outline: none;	
+	display: block;
+	margin:2px;
+	position: relative;
+}
+
+h5{
+	font-size:16px;
+	font-weight: bold;	
+}
+
+.glyhicon{
+	font-size:20px;
+}
+
+.head a:hover,
+.panel-body a:hover{
+	text-decoration: none;
+	outline: none;
+	color:#99CCFF;	
+}
+
+.left_row,.right_row,a{
+	color:white;
+	margin:5% auto;	
+}
+
+.home_photo {
+	width: 140px;
+	height: 180px;
+	border: 2px white solid;
+	border-radius: 50%;
+	overflow:hidden;
+}
+
+.panel-title a .glyphicon{
+	position: absolute;
+	left: 30px;	
+	-webkit-transition: 0.9s;
+	transition: 0.9s;
+}
+.panel{
+	border:none ;
+}
+.panel-title .collapsed .glyphicon{
+    -webkit-transform:rotate(-135deg);
+	transform: rotate(-135deg);
+}
+.panel-body{
+	background-color: #6699CC;
+	padding: 0 60px;	
+}
+.panel-body div{
+	background: #3399CC;
+	padding: 10px;
+	margin: 0 auto;
+	border-bottom:4px solid #6699CC;
+}
+
+.panel-collapse .panel-body div{
+	opacity: 0.6;
+	-webkit-transform: perspective(160px) scale(0.8) rotateX(-90deg);
+	transform: perspective(160px) scale(0.8) rotateX(-90deg);
+	-webkit-transition:0.5s;
+	transition: 0.5s ;
+}
+
+.panel-collapse.in .panel-body div{
+	opacity: 1;
+	-webkit-transform:scale(1);
+	transform: scale(1);
+}
+
+#collapseTwo .tag_panel{
+	background-color:#6699CC;
+}
+
+#collapseTwo .tag_panel .tag{
+	background-color:#3399CC;
+	border-radius:30%;
+	display:inline-block;
+	padding:16px ;
+	margin:0 16px;
+}
